@@ -7,7 +7,7 @@ class Model {
 	 * Initializes the Model class, loads and warms up the model, etc
 	 */
 	constructor() {
-		this.characters =  '@ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+		this.characters =  'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 		this.inputCanvas = document.getElementById("input-canvas")
 		this.isWarmedUp = this.loadModel()
 			.then(this.warmUp.bind(this))

@@ -13,14 +13,14 @@ $ tensorflowjs_converter --input_format keras mnist_cnn_model.h5 model_fp16 --qu
 % source env/bin/activate
 (env) % pip install tensorflow-cpu tensorflow_datasets
 (env) % pip install jupyter
-(env) % pip install matplotlib numpy emnist sklearn
+(env) % pip install numpy emnist
 
 tensorflowjsは、jupyterの依存エラー起きるので別の環境でセットアップ
 
-% python3 -m venv env
-% source env/bin/activate
-(env) % pip install tensorflowjs
-(env) % tensorflowjs_converter --input_format keras mnist_cnn_model.h5 model
+% python3 -m venv tfjsenv
+% source tfjsenv/bin/activate
+(tfjsenv) % pip install tensorflowjs
+(tfjsenv) % tensorflowjs_converter --input_format keras mnist_cnn_model.h5 model
 ```
 
 # References
